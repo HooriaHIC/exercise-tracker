@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Exercise Tracker | Free Code Camp</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <h1 class="title">Exercise Tracker</h1>
+
+      <div class="container">
+        <section class="username-sec">
+          <form class="username" action="/api/exercise/new-user" method="post">
+            <h3>Create a New User</h3>
+            <input id="uname" type="text" name="username" placeholder="username">
+            <button type="submit" value="Submit">Submit</button>
+          </form>
+          <h2>
+            Example
+          </h2>
+          <p class="example"><code>POST /api/exercise/new-user</code></p>
+
+        </section>
+          <section class="exercises-sec">
+            <h2>
+              Example
+            </h2>
+            <p class="example-2"><code>POST /api/exercise/add</code></p>
+          <form class="exercises" action="/api/exercise/add" method="post">
+            <h3>Add exercises</h3>
+            <input id="uid" type="text" name="userId" placeholder="userId*">
+            <input id="desc" type="text" name="description" placeholder="description*">
+            <input id="dur" type="text" name="duration" placeholder="duration* (mins.)">
+            <input id="dat" type="text" name="date" placeholder="date (yyyy-mm-dd)">
+            <button type="submit" value="Submit">Submit</button>
+          </form>
+        </section>
+      </div>
+   </body>
+
+</html>
